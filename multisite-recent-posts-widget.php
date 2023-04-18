@@ -115,3 +115,6 @@ function mrpw_delete() {
     delete_option( 'widget_custom_recent_posts_widget' );
 }
 register_uninstall_hook( __FILE__, 'mrpw_delete' );
+
+// Include shortcode file
+require_once( plugin_dir_path( __FILE__ ) . 'shortcode.php' );
